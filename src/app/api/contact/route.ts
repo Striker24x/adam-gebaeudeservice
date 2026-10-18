@@ -4,6 +4,8 @@ import { Lead } from "@/models/Lead";
 import { contactFormSchema } from "@/lib/validation";
 import { sendLeadNotification } from "@/lib/email";
 
+export const maxDuration = 30;
+
 export async function POST(request: NextRequest) {
   let body: unknown;
   try {

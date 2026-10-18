@@ -11,6 +11,8 @@ export default function ImpressumPage() {
             Angaben gemäß § 5 TMG
           </h2>
           <p>
+            Jamal Al Hamade
+            <br />
             Adam Gebäudeservice
             <br />
             Waren (Müritz)
@@ -32,7 +34,7 @@ export default function ImpressumPage() {
           <h2 className="mb-2 text-lg font-bold text-navy">
             Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
           </h2>
-          <p>Adam Gebäudeservice, Waren (Müritz)</p>
+          <p>Jamal Al Hamade, Adam Gebäudeservice, Waren (Müritz)</p>
         </section>
 
         <section>
