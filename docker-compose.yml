@@ -1,0 +1,49 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: adam-gebaeudeservice-web
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      MONGODB_URI: mongodb://mongo:27017/adam-gebaeudeservice
+      RESEND_API_KEY: ${RESEND_API_KEY:-}
+      CONTACT_EMAIL: ${CONTACT_EMAIL:-info@adam-gebaeudeservice.de}
+    depends_on:
+      - mongo
+    networks:
+      - adam-net
+
+  mongo:
+    image: mongo:7
+    container_name: adam-gebaeudeservice-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - adam-net
+
+  mongo-express:
+    image: mongo-express:1.0
+    container_name: adam-gebaeudeservice-mongo-express
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongo
+      ME_CONFIG_BASICAUTH: "false"
+    depends_on:
+      - mongo
+    networks:
+      - adam-net
+
+networks:
+  adam-net:
+    driver: bridge
+
+volumes:
+  mongo-data:
