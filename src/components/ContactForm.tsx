@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { FormEvent, useState } from "react";
 
 const services = [
@@ -82,21 +81,23 @@ export default function ContactForm() {
   if (status === "success") {
     return (
       <div className="flex flex-col items-center rounded-2xl bg-gradient-to-b from-[#F3F7FF] to-white px-6 py-10 text-center">
-        <div className="relative mb-6 h-40 w-40 overflow-hidden rounded-2xl shadow-lg sm:h-48 sm:w-48">
-          <Image
-            src="https://media.giphy.com/media/WqmYGa2LjQlTG/giphy.gif"
-            alt="Schnelle Katze"
-            fill
-            unoptimized
-            className="object-cover"
+        <div className="relative mb-6 h-56 w-40 overflow-hidden rounded-2xl shadow-lg sm:h-64 sm:w-48">
+          <video
+            src="/images/fun/cat-fast.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-full w-full object-cover"
           />
         </div>
         <h3 className="text-2xl font-extrabold text-navy sm:text-3xl">
           Vielen Dank für Ihre Anfrage! 🎉
         </h3>
         <p className="mt-3 max-w-md text-sm text-gray-600 sm:text-base">
-          Wir haben Ihre Anfrage erhalten und kümmern uns so schnell wie
-          diese Katze darum — Sie hören zeitnah von uns!
+          Ihre Anfrage ist gerade so schnell in unserem Postfach
+          gelandet wie diese Katze auf ihrer Rutsche — Sie hören
+          zeitnah von uns!
         </p>
         <button
           type="button"
