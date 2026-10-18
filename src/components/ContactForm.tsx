@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FormEvent, useState } from "react";
 
 const services = [
@@ -31,10 +32,11 @@ export default function ContactForm() {
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const formEl = e.currentTarget;
     setStatus("submitting");
     setErrors({});
 
-    const formData = new FormData(e.currentTarget);
+    const formData = new FormData(formEl);
     const payload = {
       firstName: formData.get("firstName"),
       lastName: formData.get("lastName"),
@@ -64,7 +66,7 @@ export default function ContactForm() {
 
       setStatus("success");
       setMessage(data.message);
-      e.currentTarget.reset();
+      formEl.reset();
     } catch {
       setStatus("error");
       setMessage(
@@ -76,6 +78,36 @@ export default function ContactForm() {
   const inputClass =
     "w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 focus:border-navy focus:outline-none focus:ring-1 focus:ring-navy";
   const labelClass = "mb-1.5 block text-sm font-medium text-gray-700";
+
+  if (status === "success") {
+    return (
+      <div className="flex flex-col items-center rounded-2xl bg-gradient-to-b from-[#F3F7FF] to-white px-6 py-10 text-center">
+        <div className="relative mb-6 h-40 w-40 overflow-hidden rounded-2xl shadow-lg sm:h-48 sm:w-48">
+          <Image
+            src="https://media.giphy.com/media/WqmYGa2LjQlTG/giphy.gif"
+            alt="Schnelle Katze"
+            fill
+            unoptimized
+            className="object-cover"
+          />
+        </div>
+        <h3 className="text-2xl font-extrabold text-navy sm:text-3xl">
+          Vielen Dank für Ihre Anfrage! 🎉
+        </h3>
+        <p className="mt-3 max-w-md text-sm text-gray-600 sm:text-base">
+          Wir haben Ihre Anfrage erhalten und kümmern uns so schnell wie
+          diese Katze darum — Sie hören zeitnah von uns!
+        </p>
+        <button
+          type="button"
+          onClick={() => setStatus("idle")}
+          className="mt-8 rounded-full border border-navy px-6 py-2.5 text-sm font-semibold text-navy transition-colors hover:bg-navy hover:text-white"
+        >
+          Weitere Anfrage senden
+        </button>
+      </div>
+    );
+  }
 
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-5">
@@ -236,11 +268,6 @@ export default function ContactForm() {
         {status === "submitting" ? "Wird gesendet..." : "Angebot anfordern"}
       </button>
 
-      {status === "success" && (
-        <p className="rounded-lg bg-green-50 p-4 text-sm text-green-700">
-          {message}
-        </p>
-      )}
       {status === "error" && (
         <p className="rounded-lg bg-red-50 p-4 text-sm text-red-700">
           {message}
