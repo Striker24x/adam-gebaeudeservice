@@ -17,11 +17,11 @@ export default function Logo({ variant = "navy", className = "" }: LogoProps) {
       <Image
         src={src}
         alt="Adam Gebäudeservice"
-        width={460}
-        height={300}
+        width={779}
+        height={586}
         unoptimized
         priority
-        className="h-12 w-auto object-contain md:h-14"
+        className="h-14 w-auto object-contain md:h-16"
       />
     </Link>
   );
