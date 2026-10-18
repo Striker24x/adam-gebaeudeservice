@@ -13,7 +13,7 @@ export default function Logo({ variant = "navy", className = "" }: LogoProps) {
       : "/images/logo/logo-header-navy.png";
 
   return (
-    <Link href="#" className={`flex items-center ${className}`}>
+    <Link href="/" className={`flex items-center ${className}`}>
       <Image
         src={src}
         alt="Adam Gebäudeservice"

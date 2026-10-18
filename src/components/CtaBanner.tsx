@@ -11,7 +11,7 @@ export default function CtaBanner() {
           Reinigungslösung für Ihr Objekt.
         </p>
         <a
-          href="#kontakt"
+          href="/#kontakt"
           className="mt-8 inline-block rounded-full bg-white px-8 py-3 text-sm font-semibold text-navy shadow-lg transition-transform hover:scale-105"
         >
           Kostenloses Angebot anfordern
