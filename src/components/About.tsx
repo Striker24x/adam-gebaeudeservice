@@ -4,13 +4,13 @@ export default function About() {
   return (
     <section id="ueber-uns" className="bg-white py-20">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 md:grid-cols-2 md:px-8">
-        <div className="relative order-2 h-80 w-full overflow-hidden rounded-2xl shadow-xl md:order-1 md:h-[420px]">
+        <div className="relative order-2 h-[420px] w-full overflow-hidden rounded-2xl bg-gray-100 shadow-xl md:order-1 md:h-[560px]">
           <Image
             src="/images/team/owner-portrait.jpg"
             alt="Inhaber von Adam Gebäudeservice"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover object-top"
+            className="object-contain"
           />
         </div>
 
