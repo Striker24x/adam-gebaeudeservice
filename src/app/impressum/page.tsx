@@ -7,17 +7,12 @@ export default function ImpressumPage() {
 
       <div className="mt-8 space-y-6 text-sm leading-relaxed text-gray-700">
         <section>
-          <h2 className="mb-2 text-lg font-bold text-navy">
-            Angaben gemäß § 5 TMG
-          </h2>
           <p>
-            Jamal Al Hamade
+            Jamal Al Hamade Gebäudereinigung
             <br />
-            Adam Gebäudeservice
+            Carl-Hainmüller-Straße 7
             <br />
-            Waren (Müritz)
-            <br />
-            Deutschland
+            17192 Waren(müritz)
           </p>
         </section>
 
@@ -32,34 +27,26 @@ export default function ImpressumPage() {
 
         <section>
           <h2 className="mb-2 text-lg font-bold text-navy">
-            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+            Verbraucherstreitbeilegung/Universalschlichtungsstelle
           </h2>
-          <p>Jamal Al Hamade, Adam Gebäudeservice, Waren (Müritz)</p>
-        </section>
-
-        <section>
-          <h2 className="mb-2 text-lg font-bold text-navy">Haftungsausschluss</h2>
           <p>
-            Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt
-            erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der
-            Inhalte können wir jedoch keine Gewähr übernehmen. Als
-            Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten
-            nach den allgemeinen Gesetzen verantwortlich. Für fremde Inhalte,
-            auf die wir lediglich verlinken, übernehmen wir keine Haftung.
+            Wir sind nicht bereit oder verpflichtet, an
+            Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
+            teilzunehmen.
           </p>
         </section>
 
-        <section>
-          <h2 className="mb-2 text-lg font-bold text-navy">Urheberrecht</h2>
-          <p>
-            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
-            diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge
-            Dritter sind als solche gekennzeichnet. Die Vervielfältigung,
-            Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb
-            der Grenzen des Urheberrechtes bedürfen der schriftlichen
-            Zustimmung des jeweiligen Autors bzw. Erstellers.
-          </p>
-        </section>
+        <p className="text-xs text-gray-500">
+          Quelle:{" "}
+          <a
+            href="https://www.e-recht24.de"
+            className="underline hover:text-navy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            eRecht24
+          </a>
+        </p>
       </div>
     </main>
   );
