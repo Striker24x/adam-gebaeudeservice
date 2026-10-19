@@ -4,7 +4,7 @@ export interface ILead {
   firstName: string;
   lastName: string;
   email: string;
-  phone: string;
+  phone?: string;
   service: string;
   location: string;
   propertySize?: string;
@@ -17,7 +17,7 @@ const LeadSchema = new Schema<ILead>({
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
   email: { type: String, required: true },
-  phone: { type: String, required: true },
+  phone: { type: String },
   service: { type: String, required: true },
   location: { type: String, required: true },
   propertySize: { type: String },
