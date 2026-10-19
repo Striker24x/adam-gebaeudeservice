@@ -16,7 +16,7 @@ export const contactFormSchema = z.object({
     "Sonstiges",
   ]),
   location: z.string().trim().min(1, "Einsatzort ist erforderlich."),
-  propertySize: z.string().trim().optional(),
+  propertySize: z.string().trim().min(1, "Objektgröße/Fläche ist erforderlich."),
   frequency: z.enum([
     "Einmalig",
     "Wöchentlich",
@@ -25,7 +25,7 @@ export const contactFormSchema = z.object({
     "Nach Bedarf",
     "Nach Vereinbarung",
   ]),
-  message: z.string().trim().optional(),
+  message: z.string().trim().min(1, "Nachricht ist erforderlich."),
 });
 
 export type ContactFormValues = z.infer<typeof contactFormSchema>;

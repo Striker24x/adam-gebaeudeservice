@@ -111,7 +111,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="space-y-5">
+    <form onSubmit={handleSubmit} className="space-y-5">
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label className={labelClass} htmlFor="firstName">
@@ -223,8 +223,14 @@ export default function ContactForm() {
             id="propertySize"
             name="propertySize"
             placeholder="z. B. 80 m²"
+            required
             className={inputClass}
           />
+          {errors.propertySize && (
+            <p className="mt-1 text-xs text-red-600">
+              {errors.propertySize[0]}
+            </p>
+          )}
         </div>
         <div>
           <label className={labelClass} htmlFor="frequency">
@@ -257,8 +263,12 @@ export default function ContactForm() {
           id="message"
           name="message"
           rows={4}
+          required
           className={inputClass}
         />
+        {errors.message && (
+          <p className="mt-1 text-xs text-red-600">{errors.message[0]}</p>
+        )}
       </div>
 
       <button
