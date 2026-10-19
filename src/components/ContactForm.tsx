@@ -77,6 +77,7 @@ export default function ContactForm() {
   const inputClass =
     "w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 focus:border-navy focus:outline-none focus:ring-1 focus:ring-navy";
   const labelClass = "mb-1.5 block text-sm font-medium text-gray-700";
+  const required = <span className="text-red-600"> *</span>;
 
   if (status === "success") {
     return (
@@ -115,7 +116,7 @@ export default function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label className={labelClass} htmlFor="firstName">
-            Vorname
+            Vorname{required}
           </label>
           <input
             id="firstName"
@@ -129,7 +130,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label className={labelClass} htmlFor="lastName">
-            Nachname
+            Nachname{required}
           </label>
           <input
             id="lastName"
@@ -146,7 +147,7 @@ export default function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label className={labelClass} htmlFor="email">
-            E-Mail-Adresse
+            E-Mail-Adresse{required}
           </label>
           <input
             id="email"
@@ -167,7 +168,6 @@ export default function ContactForm() {
             id="phone"
             name="phone"
             type="tel"
-            required
             className={inputClass}
           />
           {errors.phone && (
@@ -179,7 +179,7 @@ export default function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label className={labelClass} htmlFor="service">
-            Gewünschte Leistung
+            Gewünschte Leistung{required}
           </label>
           <select
             id="service"
@@ -200,7 +200,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label className={labelClass} htmlFor="location">
-            Einsatzort
+            Einsatzort{required}
           </label>
           <input
             id="location"
@@ -217,7 +217,7 @@ export default function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label className={labelClass} htmlFor="propertySize">
-            Objektgröße/Fläche
+            Objektgröße/Fläche{required}
           </label>
           <input
             id="propertySize"
@@ -234,7 +234,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label className={labelClass} htmlFor="frequency">
-            Reinigungshäufigkeit
+            Reinigungshäufigkeit{required}
           </label>
           <select
             id="frequency"
@@ -263,7 +263,6 @@ export default function ContactForm() {
           id="message"
           name="message"
           rows={4}
-          required
           className={inputClass}
         />
         {errors.message && (

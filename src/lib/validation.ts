@@ -4,7 +4,10 @@ export const contactFormSchema = z.object({
   firstName: z.string().trim().min(1, "Vorname ist erforderlich."),
   lastName: z.string().trim().min(1, "Nachname ist erforderlich."),
   email: z.string().trim().email("Bitte geben Sie eine gültige E-Mail-Adresse ein."),
-  phone: z.string().trim().min(3, "Bitte geben Sie eine gültige Telefonnummer ein."),
+  phone: z.union([
+    z.literal(""),
+    z.string().trim().min(3, "Bitte geben Sie eine gültige Telefonnummer ein."),
+  ]).optional(),
   service: z.enum([
     "Praxisreinigung",
     "Büroreinigung",
@@ -25,7 +28,7 @@ export const contactFormSchema = z.object({
     "Nach Bedarf",
     "Nach Vereinbarung",
   ]),
-  message: z.string().trim().min(1, "Nachricht ist erforderlich."),
+  message: z.string().trim().optional(),
 });
 
 export type ContactFormValues = z.infer<typeof contactFormSchema>;
