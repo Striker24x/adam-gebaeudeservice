@@ -1,49 +1,6 @@
 import Image from "next/image";
-
-const services = [
-  {
-    slug: "praxisreinigung",
-    title: "Praxisreinigung",
-    description:
-      "Hygienische und gründliche Reinigung von Arztpraxen, Behandlungsräumen, Wartebereichen und Sanitäranlagen.",
-  },
-  {
-    slug: "bueroreinigung",
-    title: "Büroreinigung",
-    description:
-      "Zuverlässige Reinigung von Büros, Arbeitsplätzen, Gemeinschaftsräumen und Sanitärbereichen.",
-  },
-  {
-    slug: "hotelreinigung",
-    title: "Hotelreinigung",
-    description:
-      "Professionelle Reinigung von Hotelzimmern, Ferienwohnungen, öffentlichen Bereichen und sanitären Anlagen nach individueller Absprache.",
-  },
-  {
-    slug: "ferienunterkuenfte",
-    title: "Ferienunterkünfte",
-    description:
-      "Gründliche Reinigung von Ferienhäusern und Ferienwohnungen vor dem Gästewechsel – zuverlässig und nach individueller Absprache.",
-  },
-  {
-    slug: "treppenhausreinigung",
-    title: "Treppenhausreinigung",
-    description:
-      "Zuverlässige Reinigung von Treppenhäusern, Fluren, Eingangsbereichen und Geländern.",
-  },
-  {
-    slug: "glasreinigung",
-    title: "Glasreinigung",
-    description:
-      "Professionelle Reinigung von Fenstern, Glasflächen und Rahmen für klare und gepflegte Ergebnisse.",
-  },
-  {
-    slug: "gartenpflege",
-    title: "Gartenpflege",
-    description:
-      "Pflege von Rasen, Grünflächen, Beeten und Außenbereichen rund um Ihre Immobilie.",
-  },
-];
+import Link from "next/link";
+import { services } from "@/lib/services-data";
 
 function ServiceIcon() {
   return (
@@ -109,8 +66,14 @@ export default function Services() {
                   {service.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">
-                  {service.description}
+                  {service.shortDescription}
                 </p>
+                <Link
+                  href={`/leistungen/${service.slug}`}
+                  className="mt-4 inline-flex items-center text-sm font-semibold text-navy hover:underline"
+                >
+                  Mehr erfahren →
+                </Link>
               </div>
             </div>
           ))}
