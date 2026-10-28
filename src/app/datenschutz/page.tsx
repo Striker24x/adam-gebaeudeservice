@@ -1,4 +1,10 @@
-export const metadata = { title: "Datenschutzerklärung — Adam Gebäudeservice" };
+export const metadata = {
+  title: "Datenschutzerklärung",
+  description:
+    "Datenschutzerklärung von Adam Gebäudeservice, Waren (Müritz) – Informationen zur Verarbeitung personenbezogener Daten.",
+  alternates: { canonical: "/datenschutz" },
+  robots: { index: true, follow: true },
+};
 
 export default function DatenschutzPage() {
   return (

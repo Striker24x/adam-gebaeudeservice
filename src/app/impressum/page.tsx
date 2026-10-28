@@ -1,4 +1,10 @@
-export const metadata = { title: "Impressum — Adam Gebäudeservice" };
+export const metadata = {
+  title: "Impressum",
+  description:
+    "Impressum von Adam Gebäudeservice (Jamal Al Hamade Gebäudereinigung), Waren (Müritz).",
+  alternates: { canonical: "/impressum" },
+  robots: { index: true, follow: true },
+};
 
 export default function ImpressumPage() {
   return (
