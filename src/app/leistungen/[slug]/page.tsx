@@ -178,6 +178,18 @@ export default function ServicePage({
           ))}
         </div>
 
+        <h2 className="mt-12 text-xl font-bold text-navy">
+          Häufige Fragen zur {service.title.toLowerCase()}
+        </h2>
+        <div className="mt-4 space-y-6">
+          {service.faq.map((item) => (
+            <div key={item.q}>
+              <h3 className="font-semibold text-navy">{item.q}</h3>
+              <p className="mt-1 leading-relaxed text-gray-700">{item.a}</p>
+            </div>
+          ))}
+        </div>
+
         <div className="mt-12 rounded-2xl bg-gray-50 p-8 text-center">
           <h2 className="text-xl font-bold text-navy">
             Kostenloses Angebot anfordern
