@@ -72,7 +72,7 @@ export default function ServicePage({
         "@type": "ListItem",
         position: 2,
         name: "Leistungen",
-        item: `${SITE_URL}/#leistungen`,
+        item: SITE_URL,
       },
       {
         "@type": "ListItem",
@@ -91,17 +91,7 @@ export default function ServicePage({
     description: service.metaDescription,
     url,
     provider: {
-      "@type": "LocalBusiness",
-      name: "Adam Gebäudeservice",
-      telephone: "+491773931256",
-      email: "info@adam-gebaeudeservice.de",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Carl-Hainmüller-Straße 7",
-        postalCode: "17192",
-        addressLocality: "Waren (Müritz)",
-        addressCountry: "DE",
-      },
+      "@id": `${SITE_URL}/#organization`,
     },
     areaServed: {
       "@type": "City",
@@ -179,7 +169,7 @@ export default function ServicePage({
         </div>
 
         <h2 className="mt-12 text-xl font-bold text-navy">
-          Häufige Fragen zur {service.title.toLowerCase()}
+          Häufige Fragen zu {service.title}
         </h2>
         <div className="mt-4 space-y-6">
           {service.faq.map((item) => (
@@ -196,7 +186,7 @@ export default function ServicePage({
           </h2>
           <p className="mt-2 text-gray-600">
             Schildern Sie uns kurz Ihren Bedarf — wir melden uns zeitnah mit
-            einem unverbindlichen Angebot für {service.title.toLowerCase()}.
+            einem unverbindlichen Angebot für {service.title}.
           </p>
           <Link
             href="/#kontakt"

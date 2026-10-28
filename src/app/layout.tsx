@@ -60,6 +60,7 @@ export const metadata: Metadata = {
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": `${SITE_URL}/#organization`,
   name: "Adam Gebäudeservice",
   legalName: "Jamal Al Hamade Gebäudereinigung",
   alternateName: "Reinigungsfirma Waren (Müritz)",
@@ -96,6 +97,26 @@ const localBusinessJsonLd = {
     { "@type": "City", name: "Rostock" },
   ],
   priceRange: "€€",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Leistungen von Adam Gebäudeservice",
+    itemListElement: [
+      "Praxisreinigung",
+      "Büroreinigung",
+      "Hotelreinigung",
+      "Ferienunterkünfte",
+      "Treppenhausreinigung",
+      "Glasreinigung",
+      "Gartenpflege",
+    ].map((name, i) => ({
+      "@type": "Offer",
+      position: i + 1,
+      itemOffered: {
+        "@type": "Service",
+        name,
+      },
+    })),
+  },
 };
 
 export default function RootLayout({

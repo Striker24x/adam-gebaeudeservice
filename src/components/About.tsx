@@ -7,11 +7,14 @@ export default function About() {
         <div className="relative order-2 h-[420px] w-full overflow-hidden rounded-2xl bg-gray-100 shadow-xl md:order-1 md:h-[560px]">
           <Image
             src="/images/team/owner-portrait.jpg"
-            alt="Inhaber von Adam Gebäudeservice"
+            alt="Jamal Al Hamade, Inhaber von Adam Gebäudeservice"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-contain"
           />
+          <p className="absolute bottom-4 left-4 rounded-full bg-white/90 px-4 py-1 text-xs font-semibold text-navy shadow">
+            Jamal Al Hamade — Inhaber
+          </p>
         </div>
 
         <div className="order-1 md:order-2">
@@ -19,8 +22,9 @@ export default function About() {
             Sauberkeit, auf die Sie sich verlassen können
           </h2>
           <p className="mt-6 text-base leading-relaxed text-gray-600 sm:text-lg">
-            Adam Gebäudeservice steht für gründliche Arbeit, zuverlässige
-            Termine und persönlichen Service. Wir bieten professionelle
+            Mein Name ist Jamal Al Hamade, Inhaber von Adam Gebäudeservice.
+            Ich stehe für gründliche Arbeit, zuverlässige Termine und
+            persönlichen Service. Wir bieten professionelle
             Reinigungslösungen für Praxen, Ferienwohnungen, Hotels und Büros
             in Waren (Müritz) und Umgebung. Dabei stimmen wir unsere
             Leistungen individuell auf die Anforderungen Ihres Objekts ab.
