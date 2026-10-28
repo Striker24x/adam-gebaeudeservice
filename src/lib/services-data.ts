@@ -56,6 +56,9 @@ export const services: ServiceContent[] = [
       "Für die Reinigung setzen wir auf Mittel, die gängigen Hygieneanforderungen entsprechen und gleichzeitig materialschonend sind – wichtig für empfindliche Oberflächen wie Behandlungsstühle, Bildschirme oder Edelstahlgeräte. Auf Wunsch dokumentieren wir durchgeführte Reinigungen, etwa für interne Hygienenachweise.",
       "Die Terminplanung richten wir konsequent nach Ihren Sprechzeiten aus: Viele Praxen lassen frühmorgens vor Praxisöffnung oder abends nach Feierabend reinigen, damit kein Patientenbetrieb gestört wird. Kurzfristige Zusatztermine, etwa nach einem Infekt im Team oder vor einer Praxisbegehung, sind auf Anfrage möglich.",
       "Wir sind in Waren (Müritz) und der Region für Arzt- und Zahnarztpraxen im Einsatz – unter anderem in Klink, Kargow, Jabel, Torgelow am See, Moltzow, Groß Plasten, Grabowhöfe, Vollrathsruhe, Schloen-Dratow, Klocksin, Hohen Wangelin, Peenehagen, Ankershagen, Penzlin und Malchow. Auf Anfrage übernehmen wir auch Praxisreinigungen in Rostock.",
+      "Qualitätssicherung ist uns wichtig: Jede Praxis bekommt eine feste Ansprechperson, die den Reinigungsplan kennt und bei Rückfragen erreichbar ist. Auftretende Besonderheiten – etwa ein verschobener Praxistag oder ein zusätzlicher Behandlungsraum – lassen sich so unkompliziert kurzfristig klären, ohne dass Informationen verloren gehen.",
+      "Gerade bei Neukunden führen wir vor dem ersten regulären Termin häufig eine etwas ausführlichere Ersteinreinigung durch, um einen einheitlichen Ausgangszustand herzustellen. Ab dann greift der vereinbarte Reinigungsrhythmus, den wir bei Bedarf jederzeit anpassen können, etwa wenn sich Patientenzahlen oder Raumnutzung ändern.",
+      "Praxisinhaber, die neben der reinen Reinigung auch Wert auf Nachhaltigkeit legen, können bei uns auf Wunsch umweltschonendere Reinigungsmittel ansprechen, sofern diese die notwendigen Hygienestandards erfüllen. Wir beraten Sie gern zu den jeweiligen Vor- und Nachteilen für Ihre Praxis.",
       "Sie möchten die Reinigung Ihrer Praxis in zuverlässige Hände geben? Nehmen Sie Kontakt mit uns auf – wir erstellen Ihnen ein kostenloses, unverbindliches Angebot, abgestimmt auf Raumgröße, Nutzung und gewünschte Frequenz.",
     ],
     faq: [
@@ -74,6 +77,14 @@ export const services: ServiceContent[] = [
       {
         q: "Wie wird der Preis für die Praxisreinigung berechnet?",
         a: "Der Preis richtet sich nach Raumgröße, Ausstattung und gewünschter Frequenz. Nach einem kurzen Vor-Ort-Termin erhalten Sie ein transparentes, unverbindliches Angebot.",
+      },
+      {
+        q: "Gibt es eine feste Ansprechperson für unsere Praxis?",
+        a: "Ja, wir stellen eine feste Ansprechperson, die den Reinigungsplan kennt und bei kurzfristigen Änderungen direkt erreichbar ist.",
+      },
+      {
+        q: "Bieten Sie auch umweltschonendere Reinigungsmittel an?",
+        a: "Auf Wunsch sprechen wir Alternativen an, die die notwendigen Hygienestandards für Praxen weiterhin erfüllen.",
       },
     ],
   },
@@ -101,6 +112,8 @@ export const services: ServiceContent[] = [
       "Bodenbeläge unterscheiden sich stark: Teppichböden brauchen regelmäßiges Staubsaugen und gelegentliche Grundreinigung, Laminat und Fliesen eine schonende Feuchtreinigung ohne Streifenbildung. Wir stimmen die Methode auf den jeweiligen Belag ab, damit Böden langfristig gepflegt bleiben und nicht vorzeitig verschleißen.",
       "Für Unternehmen mit mehreren Standorten oder wachsenden Flächen bieten wir flexible Vertragsmodelle an, die sich an Mitarbeiterzahl, Flächenänderung oder saisonalen Schwankungen anpassen lassen – ohne aufwendige Neuverhandlung bei jeder kleinen Änderung.",
       "Wir betreuen Büros in Waren (Müritz) sowie in der weiteren Umgebung, darunter Klink, Kargow, Jabel, Torgelow am See, Moltzow, Groß Plasten, Grabowhöfe, Vollrathsruhe, Schloen-Dratow, Klocksin, Hohen Wangelin, Peenehagen, Ankershagen, Penzlin und Malchow. Für Unternehmen mit Sitz in Rostock übernehmen wir die Büroreinigung ebenfalls auf Anfrage.",
+      "Als Reinigungsfirma für Büros in Waren (Müritz) legen wir Wert auf feste Teams statt wechselndem Personal: Dieselben Reinigungskräfte kennen Ihre Räume, Ihre Wünsche und eventuelle Besonderheiten – das spart Abstimmungsaufwand und sorgt für gleichbleibende Qualität von Termin zu Termin.",
+      "Nach dem Erstgespräch erhalten Sie ein schriftliches Angebot mit transparenter Kalkulation nach Fläche und Frequenz, ohne versteckte Zusatzkosten. Änderungen am Leistungsumfang – etwa ein zusätzlicher Raum oder eine geänderte Reinigungsfrequenz – lassen sich unkompliziert nachträglich anpassen.",
       "Für ein individuelles Angebot nennen Sie uns einfach die Größe Ihrer Büroflächen und die gewünschte Reinigungsfrequenz – wir melden uns zeitnah mit einem transparenten, kostenlosen Angebot zurück.",
     ],
     faq: [
@@ -119,6 +132,14 @@ export const services: ServiceContent[] = [
       {
         q: "Wie flexibel sind die Vertragsmodelle?",
         a: "Wir passen Umfang und Frequenz an Mitarbeiterzahl, Flächenänderungen oder saisonale Schwankungen an – ohne aufwendige Neuverhandlung im Alltag.",
+      },
+      {
+        q: "Was kostet Büroreinigung in Waren (Müritz)?",
+        a: "Der Preis hängt von Fläche, Ausstattung und gewünschter Frequenz ab. Nennen Sie uns die Eckdaten Ihres Büros – Sie erhalten eine transparente, unverbindliche Kalkulation ohne versteckte Kosten.",
+      },
+      {
+        q: "Arbeiten immer dieselben Reinigungskräfte bei uns?",
+        a: "Soweit möglich, ja – wir setzen auf feste Teams pro Objekt, damit Räume und Besonderheiten bekannt bleiben.",
       },
     ],
   },
@@ -146,6 +167,8 @@ export const services: ServiceContent[] = [
       "In der Hauptsaison steigt die Zahl der Zimmerwechsel oft deutlich an, während in der Nebensaison seltenere, aber gründlichere Reinigungen gefragt sind. Wir passen Personaleinsatz und Taktung an diese Schwankungen an, damit Qualität unabhängig von der Auslastung konstant bleibt.",
       "Für Frühstücksräume und Gemeinschaftsküchen gelten besondere Hygienestandards, da hier Lebensmittel verarbeitet und verzehrt werden. Wir reinigen Tische, Theken und Kontaktflächen entsprechend gründlich und richten uns dabei nach den Öffnungszeiten Ihres Frühstücksservice.",
       "Unseren Service bieten wir Hotels, Pensionen und Gästehäusern in Waren (Müritz) sowie in Klink, Kargow, Jabel, Torgelow am See, Moltzow, Groß Plasten, Grabowhöfe, Vollrathsruhe, Schloen-Dratow, Klocksin, Hohen Wangelin, Peenehagen, Ankershagen, Penzlin und Malchow. Auch für Beherbergungsbetriebe in Rostock sind wir auf Anfrage im Einsatz.",
+      "Als Reinigungsfirma für die Tourismusregion rund um die Müritz kennen wir die saisonalen Besonderheiten: hohe Auslastung in den Sommermonaten und an Feiertagen, ruhigere Phasen im Winter. Wir stimmen Personaleinsatz und Vertragsgestaltung darauf ab, statt ein starres Modell über das ganze Jahr zu verlangen.",
+      "Für neue Kooperationen vereinbaren wir zunächst einen Vor-Ort-Termin, bei dem wir Zimmeranzahl, Gemeinschaftsflächen und übliche Belegungszeiten erfassen. Daraus entsteht ein Angebot mit klarer Preisstruktur pro Zimmer bzw. Flächeneinheit, das bei Bedarf saisonal angepasst werden kann.",
       "Sprechen Sie uns an, wenn Sie einen verlässlichen Reinigungspartner für die Saison oder dauerhaft suchen – wir erstellen Ihnen ein auf Ihre Zimmeranzahl zugeschnittenes Angebot.",
     ],
     faq: [
@@ -164,6 +187,14 @@ export const services: ServiceContent[] = [
       {
         q: "Wie wird das Angebot für mein Hotel berechnet?",
         a: "Maßgeblich sind Zimmeranzahl, Größe der Gemeinschaftsflächen und gewünschte Frequenz. Nach kurzer Abstimmung erhalten Sie ein individuelles Angebot.",
+      },
+      {
+        q: "Was kostet Hotelreinigung pro Zimmer?",
+        a: "Das hängt von Zimmergröße, Ausstattung und Belegungstaktung ab. Beim Vor-Ort-Termin ermitteln wir die Eckdaten und erstellen eine transparente Preisstruktur pro Zimmer.",
+      },
+      {
+        q: "Passen Sie sich an saisonale Auslastungsschwankungen an?",
+        a: "Ja, Personaleinsatz und Vertragsgestaltung richten wir nach Haupt- und Nebensaison aus, statt ein starres Jahresmodell vorzugeben.",
       },
     ],
   },
@@ -191,6 +222,8 @@ export const services: ServiceContent[] = [
       "Für Vermieter, die mehrere Objekte in der Region verwalten, bieten wir feste Reinigungsfenster an, die sich nach den üblichen Wechseltagen (meist samstags) richten, sowie kurzfristige Zusatztermine bei spontanen Buchungen oder verlängerten Aufenthalten.",
       "Nach jeder Endreinigung werfen wir einen kurzen, aufmerksamen Blick auf den Zustand der Unterkunft – das hilft Vermietern, Schäden oder fehlendes Inventar frühzeitig zu erkennen, bevor die nächsten Gäste einziehen.",
       "Unseren Endreinigungsservice bieten wir für Ferienunterkünfte in Waren (Müritz) sowie in Klink, Kargow, Jabel, Torgelow am See, Moltzow, Groß Plasten, Grabowhöfe, Vollrathsruhe, Schloen-Dratow, Klocksin, Hohen Wangelin, Peenehagen, Ankershagen, Penzlin und Malchow an. Auch Objekte in Rostock übernehmen wir auf Anfrage.",
+      "Was zur Endreinigung gehört, hängt vom Objekt ab: Bei einer kleinen Ferienwohnung reicht oft eine kompakte Reinigung von ein bis zwei Stunden, bei einem größeren Ferienhaus mit mehreren Schlafzimmern und Außenbereich braucht es entsprechend mehr Zeit. Wir kalkulieren transparent nach Wohnfläche und Ausstattung.",
+      "Für Vermieter, die über Plattformen wie Airbnb oder Booking.com vermieten, ist ein verlässlicher Reinigungspartner besonders wichtig, da schlechte Bewertungen wegen mangelnder Sauberkeit sich direkt auf künftige Buchungen auswirken. Wir arbeiten nach einer festen Checkliste, damit jede Endreinigung denselben hohen Standard erreicht.",
       "Vermieten Sie eine oder mehrere Ferienunterkünfte? Lassen Sie uns über eine feste Zusammenarbeit für die Saison sprechen – kontaktieren Sie uns für ein unverbindliches Angebot.",
     ],
     faq: [
@@ -209,6 +242,14 @@ export const services: ServiceContent[] = [
       {
         q: "Betreuen Sie auch mehrere Ferienobjekte eines Vermieters?",
         a: "Ja, für Vermieter mit mehreren Objekten richten wir feste Reinigungsfenster ein, die sich an den üblichen Wechseltagen orientieren.",
+      },
+      {
+        q: "Was kostet die Endreinigung einer Ferienwohnung?",
+        a: "Der Preis richtet sich nach Wohnfläche und Ausstattung. Nennen Sie uns Größe und Lage der Unterkunft – Sie erhalten eine transparente Preiskalkulation ohne versteckte Kosten.",
+      },
+      {
+        q: "Arbeiten Sie nach einer festen Checkliste?",
+        a: "Ja, damit jede Endreinigung – unabhängig davon, wer sie durchführt – denselben hohen Standard erreicht.",
       },
     ],
   },
@@ -236,6 +277,8 @@ export const services: ServiceContent[] = [
       "Neben der laufenden Reinigung bieten wir auf Anfrage auch Grundreinigungen an, etwa nach Renovierungsarbeiten im Haus, sowie saisonale Zusatzleistungen wie das Entfernen von Laub im Eingangsbereich im Herbst.",
       "Für Objekte mit Außenflächen im Winter können wir auf Anfrage auch Winterdienst-Leistungen wie Schneeräumung und Streuen vor Eingängen koordinieren, damit Bewohner und Besucher sicher ins Gebäude gelangen.",
       "Wir reinigen Treppenhäuser in Waren (Müritz) und der Region, darunter Klink, Kargow, Jabel, Torgelow am See, Moltzow, Groß Plasten, Grabowhöfe, Vollrathsruhe, Schloen-Dratow, Klocksin, Hohen Wangelin, Peenehagen, Ankershagen, Penzlin und Malchow. Objekte in Rostock übernehmen wir ebenfalls auf Anfrage.",
+      "Die Kosten für eine Treppenhausreinigung werden meist pro Etage oder pro Quadratmeter kalkuliert und hängen von Frequenz, Etagenzahl und Zustand der Flächen ab. Nach einer kurzen Objektbesichtigung erhalten Hausverwaltungen und Eigentümergemeinschaften von uns eine nachvollziehbare, schriftliche Kalkulation, oft als Teil der Betriebskostenabrechnung.",
+      "Für Mehrfamilienhäuser mit mehreren Aufgängen bieten wir einheitliche Reinigungsstandards über alle Aufgänge hinweg, damit kein Treppenhaus schlechter gepflegt wird als ein anderes – ein häufiger Kritikpunkt bei wechselnden Dienstleistern.",
       "Für Hausverwaltungen und Eigentümergemeinschaften erstellen wir gerne ein Angebot für die regelmäßige Treppenhausreinigung – sprechen Sie uns einfach an.",
     ],
     faq: [
@@ -254,6 +297,14 @@ export const services: ServiceContent[] = [
       {
         q: "Arbeiten Sie direkt mit Hausverwaltungen zusammen?",
         a: "Ja, wir erstellen Angebote für Hausverwaltungen und Eigentümergemeinschaften und stimmen den Reinigungsplan mit den jeweiligen Vorgaben ab.",
+      },
+      {
+        q: "Was kostet Treppenhausreinigung im Mehrfamilienhaus?",
+        a: "Die Kalkulation erfolgt meist pro Etage oder Quadratmeter, abhängig von Frequenz und Zustand der Flächen. Nach einer Objektbesichtigung erhalten Sie eine nachvollziehbare, schriftliche Kalkulation.",
+      },
+      {
+        q: "Gelten einheitliche Standards bei mehreren Aufgängen?",
+        a: "Ja, wir reinigen alle Aufgänge eines Objekts nach demselben Standard, damit die Qualität überall gleich bleibt.",
       },
     ],
   },
@@ -281,6 +332,8 @@ export const services: ServiceContent[] = [
       "Wintergärten und Terrassenverglasungen stellen besondere Anforderungen, da sie oft großflächig, schräg oder über mehrere Ebenen verteilt sind. Wir prüfen vor Ort, welche Technik und welcher Zugang notwendig sind, und planen den Einsatz entsprechend.",
       "Nach Bauarbeiten, etwa bei Fenstertausch oder Renovierung, bleiben häufig Zement- oder Farbreste auf dem Glas zurück. Für solche Fälle bieten wir eine gründliche Erstreinigung an, die über die normale Unterhaltsreinigung hinausgeht.",
       "Unseren Glasreinigungsservice bieten wir in Waren (Müritz) sowie in Klink, Kargow, Jabel, Torgelow am See, Moltzow, Groß Plasten, Grabowhöfe, Vollrathsruhe, Schloen-Dratow, Klocksin, Hohen Wangelin, Peenehagen, Ankershagen, Penzlin und Malchow an. Aufträge in Rostock übernehmen wir ebenfalls auf Anfrage.",
+      "Die Kosten für Glasreinigung werden meist pro Quadratmeter oder pro Fenster kalkuliert und richten sich nach Fensteranzahl, Zugänglichkeit und gewünschtem Turnus. Bei größeren Objekten wie Wintergärten oder Glasfronten erstellen wir nach einer kurzen Begehung ein transparentes Angebot.",
+      "Als Reinigungsfirma für Privat- und Gewerbekunden in der Region legen wir Wert auf zuverlässige Termine: Fest vereinbarte Reinigungsrhythmen werden eingehalten, Verschiebungen kündigen wir frühzeitig an.",
       "Ob einmalige Glasreinigung oder fester Reinigungsrhythmus: Kontaktieren Sie uns für ein kostenloses Angebot, abgestimmt auf Fensteranzahl und Zugänglichkeit.",
     ],
     faq: [
@@ -299,6 +352,14 @@ export const services: ServiceContent[] = [
       {
         q: "Reinigen Sie auch Wintergärten und Terrassenverglasungen?",
         a: "Ja, dafür prüfen wir individuell die passende Technik, da diese Flächen oft großflächig oder schräg angeordnet sind.",
+      },
+      {
+        q: "Was kostet professionelle Glasreinigung?",
+        a: "Die Kalkulation erfolgt meist pro Fenster oder Quadratmeter, abhängig von Zugänglichkeit und Anzahl. Nennen Sie uns Fensteranzahl und Objektart für ein transparentes Angebot.",
+      },
+      {
+        q: "Bieten Sie auch regelmäßige Glasreinigungsverträge an?",
+        a: "Ja, neben einmaligen Terminen sind feste Rhythmen wie halbjährlich oder quartalsweise möglich.",
       },
     ],
   },
@@ -326,6 +387,8 @@ export const services: ServiceContent[] = [
       "Private Gartenbesitzer, die selbst wenig Zeit für die laufende Pflege haben, profitieren von einem festen Pflegevertrag mit regelmäßigen Terminen, während Eigentümer von Ferienimmobilien häufig eine saisonale Grundreinigung im Frühjahr vor der Vermietungssaison und im Herbst danach bevorzugen.",
       "Wege, Einfahrten und befestigte Außenflächen gehören ebenfalls zum Leistungsumfang: Wir entfernen Unkraut aus Fugen, kehren Laub und Schmutz zusammen und halten so auch die nicht-grünen Bereiche rund um Ihre Immobilie gepflegt.",
       "Unseren Gartenpflegeservice bieten wir in Waren (Müritz) sowie in Klink, Kargow, Jabel, Torgelow am See, Moltzow, Groß Plasten, Grabowhöfe, Vollrathsruhe, Schloen-Dratow, Klocksin, Hohen Wangelin, Peenehagen, Ankershagen, Penzlin und Malchow an. Aufträge in Rostock übernehmen wir ebenfalls auf Anfrage.",
+      "Die Kosten für Gartenpflege werden meist pro Stunde oder im Rahmen eines monatlichen Pflegevertrags kalkuliert und richten sich nach Grundstücksgröße, Umfang der Arbeiten und Häufigkeit. Nach einer kurzen Besichtigung erhalten Sie von uns eine transparente, unverbindliche Kalkulation.",
+      "Als Reinigungsfirma mit Zusatzleistung Außenanlagenpflege sehen wir Gebäude- und Gartenpflege gerne als Gesamtpaket: Kunden, die bereits Treppenhaus- oder Büroreinigung bei uns beauftragt haben, können die Gartenpflege unkompliziert ergänzen, ohne einen zweiten Dienstleister koordinieren zu müssen.",
       "Egal ob einmaliger Pflegeeinsatz oder laufender Pflegevertrag: Nennen Sie uns Grundstücksgröße und gewünschten Umfang – wir erstellen Ihnen ein passendes, kostenloses Angebot.",
     ],
     faq: [
@@ -344,6 +407,14 @@ export const services: ServiceContent[] = [
       {
         q: "Ist auch eine einmalige Grundreinigung des Gartens möglich?",
         a: "Ja, etwa zu Saisonbeginn oder -ende, unabhängig von einem laufenden Pflegevertrag.",
+      },
+      {
+        q: "Was kostet Gartenpflege pro Monat?",
+        a: "Das hängt von Grundstücksgröße und gewünschtem Umfang ab. Nach einer kurzen Besichtigung erhalten Sie eine transparente Kalkulation, egal ob stundenweise oder als monatlicher Pflegevertrag.",
+      },
+      {
+        q: "Kann ich Gartenpflege mit anderen Leistungen wie Treppenhausreinigung kombinieren?",
+        a: "Ja, viele Kunden kombinieren Gebäude- und Außenanlagenpflege bei uns als ein Gesamtpaket mit einem Ansprechpartner.",
       },
     ],
   },

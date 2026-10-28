@@ -17,7 +17,7 @@ const SITE_NAME = "Adam Gebäudeservice";
 const TITLE =
   "Adam Gebäudeservice — Professionelle Gebäudereinigung in Waren (Müritz)";
 const DESCRIPTION =
-  "Zuverlässige Reinigung für Praxen, Ferienwohnungen, Hotels und Büros in Waren (Müritz) und Umgebung – gründlich, pünktlich und professionell.";
+  "Adam Gebäudeservice – Ihre Reinigungsfirma in Waren (Müritz): zuverlässige Reinigung für Praxen, Ferienwohnungen, Hotels und Büros, gründlich und pünktlich.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -62,6 +62,7 @@ const localBusinessJsonLd = {
   "@type": "LocalBusiness",
   name: "Adam Gebäudeservice",
   legalName: "Jamal Al Hamade Gebäudereinigung",
+  alternateName: "Reinigungsfirma Waren (Müritz)",
   description: DESCRIPTION,
   url: SITE_URL,
   telephone: "+491773931256",
